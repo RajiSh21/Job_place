@@ -1,0 +1,68 @@
+name: kaamkhojo_app
+description: KaamKhojo (काम खोजौं) - Nepal Local Services Marketplace
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # HTTP
+  dio: ^5.4.3
+  # State management
+  provider: ^6.1.2
+  # Secure storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.3.2
+  # Navigation
+  go_router: ^13.2.0
+  # Images
+  cached_network_image: ^3.3.1
+  image_picker: ^1.1.2
+  photo_view: ^0.14.0
+  # UI components
+  shimmer: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  table_calendar: ^3.1.2
+  dotted_border: ^2.1.0
+  # Maps & Location
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+  # Realtime chat
+  socket_io_client: ^2.0.3+1
+  # Firebase
+  firebase_core: ^3.3.0
+  firebase_messaging: ^15.1.0
+  flutter_local_notifications: ^17.2.2
+  # Date/Time
+  intl: ^0.19.0
+  # Utilities
+  url_launcher: ^6.3.0
+  connectivity_plus: ^6.0.5
+  permission_handler: ^11.3.1
+  uuid: ^4.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: NotoSansDevanagari
+      fonts:
+        - asset: assets/fonts/NotoSansDevanagari-Regular.ttf
+        - asset: assets/fonts/NotoSansDevanagari-Bold.ttf
+          weight: 700
